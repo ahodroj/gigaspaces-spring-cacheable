@@ -22,13 +22,11 @@ public void loadBooks(InputStream batch)
 
 ```
 
-
+## Data-locality with a XAP Local Cache (highest performance)
 Since most cache get queries in Spring are ID-based lookups, the performance can be greatly improved by even utilizing the Local Cache feature in GigaSpaces XAP:
 
 ```xml
      <cache:annotation-driven />
-  
-
  	  <bean id="cacheManager" class="org.openspaces.cacheable.GigaSpacesCacheManager">
   		 <property name="space" value="jini://*/*/space" />
      	 <property name="localCache" value="true" />
