@@ -22,8 +22,8 @@ public void loadBooks(InputStream batch)
 
 ```
 
-## Data-locality with a XAP Local Cache (highest performance)
-Since most cache get queries in Spring are ID-based lookups, the performance can be greatly improved by even utilizing the Local Cache feature in GigaSpaces XAP:
+## Data-locality with a local cache (highest performance)
+Since most cache get queries in Spring are ID-based lookups, the performance can be extremely improved by utilizing the Local Cache feature in GigaSpaces XAP:
 
 ```xml
      <cache:annotation-driven />
