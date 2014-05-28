@@ -1,7 +1,7 @@
 gigaspaces-spring-cacheable
 ===========================
 
-Implementation of Spring Cache Abstraction for GigaSpaces XAP. This provides support for @Cacheable annotations over methods in a Spring application. To use GigaSpaces as a caching provider, you should define a GigaSpacesCacheManager bean and register it as a Spring cache manager:
+Implementation of [Spring Cache Abstractions](http://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/cache.html) for GigaSpaces XAP. This provides support for @Cacheable annotations over methods in a Spring application. To use GigaSpaces as a caching provider, you should define a GigaSpacesCacheManager bean and register it as a Spring cache manager:
 
 ```xml
      <cache:annotation-driven />
